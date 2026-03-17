@@ -32,7 +32,7 @@ Users should be able to:
 
 | Desktop View Tooltip Open          | Mobile View Tooltip Open          |
 | ---------------------------------- | --------------------------------- |
-| ![](./screenshot/desktop-open.png) | ![](./screenshot/tablet-open.png) |
+| ![](./screenshot/desktop-open.png) | ![](./screenshot/mobile-open.png) |
 
 ### Links
 
