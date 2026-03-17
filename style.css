@@ -208,14 +208,25 @@ p {
   padding-block: 2rem;
   padding-inline: clamp(0.5rem, -5.318rem + 29.091vw, 1.5rem);
   border-radius: 0 0 1rem 1rem;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease-in-out,
+    display 0.3s allow-discrete;
 }
 
 .socials:popover-open {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  border: none;
+  opacity: 1;
+}
+
+@starting-style {
+  .socials:popover-open {
+    opacity: 0;
+  }
 }
 
 .socials__text {
@@ -283,7 +294,7 @@ a:hover,
     left: anchor(center);
     transform: translate(-50%, -120%);
     overflow: visible;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
@@ -298,9 +309,5 @@ a:hover,
     border-right: 10px solid transparent;
     border-top: 10px solid var(--very-dark-grayish-blue);
     clear: both;
-  }
-
-  .socials:popover-open {
-    padding: 1rem;
   }
 }
