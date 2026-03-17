@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Article preview component" />
     <meta name="author" content="Asilcan Toper" />
+    <meta
+      property="og:url"
+      content="https://kapteynuniverse.github.io/Article-preview-component/"
+    />
+    <meta
+      property="og:title"
+      content="Article Preview Component by Asilcan Toper"
+    />
+    <meta property="og:description" content="Check this out!" />
 
     <link
       rel="icon"
@@ -18,7 +27,7 @@
   </head>
   <body>
     <main class="main">
-      <h1 class="hidden">Placeholder</h1>
+      <h1 class="sr-only">Placeholder</h1>
       <article class="furniture">
         <img
           src="./assets/images/drawers.jpg"
@@ -49,11 +58,10 @@
               <p>Michelle Appleton</p>
               <time datetime="2020-06-28 00:00">28 Jun 2020</time>
             </div>
-            <button popovertarget="socials" class="share-btn">
+            <button popovertarget="socials" id="share-btn" class="share-btn">
               <img
                 src="./assets/images/icon-share.svg"
                 alt="Share this article to social media"
-                id="share-btn1"
                 width="15"
                 height="13"
               />
@@ -62,38 +70,38 @@
         </div>
         <div id="socials" popover class="socials">
           <h3 class="socials__text">SHARE</h3>
-          <a href="https://www.facebook.com/"
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://kapteynuniverse.github.io/Article-preview-component/"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
               src="./assets/images/icon-facebook.svg"
               alt="Share on Facebook"
               width="20"
               height="20"
           /></a>
-          <a href="https://x.com/home"
+          <a
+            href="https://twitter.com/intent/tweet?url=https://kapteynuniverse.github.io/Article-preview-component/&text=Check this out!"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
               src="./assets/images/icon-twitter.svg"
               alt="Share on X"
               width="20"
               height="17"
           /></a>
-          <a href="https://youtu.be/dQw4w9WgXcQ?si=ujF7FpPTB1CxS0lw"
+          <a
+            href="https://pinterest.com/pin/create/button/?url=https://kapteynuniverse.github.io/Article-preview-component/&description=Check this out!"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
               src="./assets/images/icon-pinterest.svg"
               alt="Share on Pinterest"
               width="20"
               height="20"
           /></a>
-          <img
-            src="./assets/images/icon-share.svg"
-            alt="Share button"
-            width="15"
-            height="13"
-            id="share-btn2"
-            class="hidden-btn"
-          />
         </div>
       </article>
     </main>
-    <!-- <script src="./index.js"></script> -->
   </body>
 </html>
