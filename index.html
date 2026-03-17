@@ -20,9 +20,14 @@
     <main class="main">
       <h1 class="hidden">Placeholder</h1>
       <article class="furniture">
-        <div class="furniture__image">
-          <img src="./assets/images/drawers.jpg" alt="Drawer photo" />
-        </div>
+        <img
+          src="./assets/images/drawers.jpg"
+          alt="A green wooden dresser with drawers, topped with a vase of dried pampas grass and framed prints."
+          width="660"
+          height="528"
+          fetchpriority="high"
+          class="furniture__image"
+        />
         <div class="furniture__text-section">
           <h2 class="furniture__text">
             Shift the overall look and feel by adding these wonderful touches to
@@ -36,45 +41,59 @@
           <div class="furniture__profile-section">
             <img
               src="./assets/images/avatar-michelle.jpg"
-              alt="Michelle Appleton profile picture"
+              alt=""
+              width="175"
+              height="175"
             />
             <div class="furniture__name">
               <p>Michelle Appleton</p>
               <time datetime="2020-06-28 00:00">28 Jun 2020</time>
             </div>
-            <div class="share-btn">
+            <button popovertarget="socials" class="share-btn">
               <img
                 src="./assets/images/icon-share.svg"
-                alt="Share button"
+                alt="Share this article to social media"
                 id="share-btn1"
+                width="15"
+                height="13"
               />
-            </div>
+            </button>
           </div>
         </div>
-        <div class="socials">
+        <div id="socials" popover class="socials">
           <h3 class="socials__text">SHARE</h3>
           <a href="https://www.facebook.com/"
             ><img
               src="./assets/images/icon-facebook.svg"
               alt="Share on Facebook"
+              width="20"
+              height="20"
           /></a>
           <a href="https://x.com/home"
-            ><img src="./assets/images/icon-twitter.svg" alt="Share on X"
+            ><img
+              src="./assets/images/icon-twitter.svg"
+              alt="Share on X"
+              width="20"
+              height="17"
           /></a>
           <a href="https://youtu.be/dQw4w9WgXcQ?si=ujF7FpPTB1CxS0lw"
             ><img
               src="./assets/images/icon-pinterest.svg"
               alt="Share on Pinterest"
+              width="20"
+              height="20"
           /></a>
           <img
             src="./assets/images/icon-share.svg"
             alt="Share button"
+            width="15"
+            height="13"
             id="share-btn2"
             class="hidden-btn"
           />
         </div>
       </article>
     </main>
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
   </body>
 </html>
